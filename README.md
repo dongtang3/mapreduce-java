@@ -20,10 +20,6 @@ This is a simple MapReduce implementation in Java that performs a word count on 
 
 ## How to Run
 
-### On Windows
-
-You can run the project using the provided batch file (if available).
-
 ### On Linux/WSL
 
 Use the `run.sh` script to compile and run the program:
@@ -44,26 +40,5 @@ The script will compile the project using Maven, start the Coordinator, and laun
 - The Map phase produces intermediate files with key/value pairs, and the Reduce phase aggregates these intermediate results. The final reduced data is stored in the `mr-tmp/` directory.
 - If more verbose logging for the Reduce phase is needed, consider modifying the Worker or Coordinator code to output additional debug information.
 
-## Uploading to GitHub
-
-To upload this project to GitHub, follow these steps:
-
-1. Initialize a git repository:
-   ```bash
-   git init
-   ```
-2. Add all files to the repository:
-   ```bash
-   git add .
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Initial commit"
-   ```
-4. Create a new repository on GitHub and push your project:
-   ```bash
-   git remote add origin <repository URL>
-   git push -u origin master
-   ```
 
 Happy coding!
